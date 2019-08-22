@@ -1,6 +1,6 @@
-# flutter_app_uniticket
+# flutter_app_uniticket_v2
 
-A new Uniticket application.
+A new Flutter application.
 
 ## Getting Started
 
