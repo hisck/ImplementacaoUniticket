@@ -1,4 +1,4 @@
-package com.example.flutter_app_uniticket;
+package com.example.flutter_app_uniticket_v2;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

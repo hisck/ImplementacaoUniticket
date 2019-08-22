@@ -1,6 +1,6 @@
 // This is a generated file; do not edit or check into version control.
 FLUTTER_ROOT=/home/tenorio/Dev/flutter
-FLUTTER_APPLICATION_PATH=/home/tenorio/AndroidStudioProjects/flutter_app_uniticket
+FLUTTER_APPLICATION_PATH=/home/tenorio/AndroidStudioProjects/flutter_app_uniticket_v2
 FLUTTER_TARGET=lib/main.dart
 FLUTTER_BUILD_DIR=build
 SYMROOT=${SOURCE_ROOT}/../build/ios
