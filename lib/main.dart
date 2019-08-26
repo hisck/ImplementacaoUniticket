@@ -7,6 +7,7 @@ import 'package:flutter_app_uniticket_v2/Relatorios_page.dart';
 import 'package:flutter_app_uniticket_v2/payment_methods_page.dart';
 import 'package:flutter_app_uniticket_v2/HistoryPage.dart';
 import 'package:flutter_app_uniticket_v2/Transfer_page.dart';
+import 'package:flutter_app_uniticket_v2/Adicao_cardapio_page.dart';
 
 void main()=> runApp(new Uniticket());
 
@@ -79,24 +80,24 @@ class HomePage extends StatelessWidget {
               trailing: new Icon(Icons.credit_card),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context)=>new paymentpage("Métodos Pagamento")));
+                Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context)=>new MetodoPage("Métodos Pagamento")));
               },
             ),
             new Divider(),
-            new ListTile(
+            /*new ListTile(
               title: new Text("Relatórios"),
               trailing: new Icon(Icons.pie_chart),
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context)=>new RelatorioPage("Relatórios")));
               },
-            ),
+            ),*/
             new ListTile(
-              title: new Text("Edição Cardapio"),
+              title: new Text("Adição Cardapio"),
               trailing: new Icon(Icons.edit),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context)=>new CardapioPage("Edição Cardápio")));
+                Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context)=>new AdicaoPage("Adição Cardápio")));
               },
             ),
             new ListTile(
@@ -107,11 +108,10 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      body: new Container(
-        child: new Center(
-          child: new Text("QRCODE"),
-        ),
-      )
+      body: new Text("Quantidade de Tickets = 20"),
+      //new QrImage(
+        //data: "4",
+        //size: 200.0,
     );
   }
 }

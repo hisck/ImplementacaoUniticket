@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_uniticket_v2/payment_methods_model.dart';
+import 'payment_methods_list.dart';
 
-class paymentpage extends StatelessWidget {
+class MetodoPage extends StatelessWidget {
   final String title;
 
-  paymentpage(this.title);
+  MetodoPage(this.title);
+
+  List<Metodo> initialMetodo = []
+    ..add(Metodo('XXX', 'XXXX XXXX XXXX 8596'))
+    ..add(Metodo('XXX', 'XXXX XXXX XXXX 9858'));
 
   @override
   Widget build(BuildContext context) {
@@ -11,8 +17,10 @@ class paymentpage extends StatelessWidget {
       appBar: new AppBar(
         title: new Text(title),
       ),
-      body: new Center(
-        child: new Text(title),
+      body: Container(
+          child: Center(
+            child: MetodoList(initialMetodo),
+          )
       ),
     );
   }
